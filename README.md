@@ -41,7 +41,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # node.jsのインストール可能なバージョンを確認する
 $ nodebrew ls-remote
 
-# node.js v9.6.1のインストール
+# node.js v12.13.1のインストール
 $ nodebrew install-binary v12.13.1
 
 # 確認する
