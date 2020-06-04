@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-[シンヤのITブログ](https://shinya-it.com/)のRepository
+[シンヤのITブログ](https://shinya-it.com/?link=github)のRepository
 
 # Version
 
