@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+/* breakPC */
+@custom-media --breakPC (width <= 1024px);
+
+/* iPad */
+@custom-media --iPad (width <= 767px);
+
+/* smartphone */
+@custom-media --smartphone (width <= 600px);
+
+/* smartphoneSS */
+@custom-media --smartphoneSS (width <= 360px);
+
+$base-font-family: Avenir Next, Roboto,"Noto Sans CJK JP","Noto Sans JP",Arial,Helvetica,sans-serif;
+
+/* font-size */
+$base-font-size: 18px;
+
+/* width */
+$large-width: 1024px;
+$small-width: 600px;
+
+/* border-radius */
+$radius: 8px;
+
+/* font-weight */
+$fw-thin: 300;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-exbold: 900;
+
+/* colors */
+$color-white: #ffffff;
+$color-black: #000000;
+$color-darker: #202124;
+$color-darkgray: #545C6B;
+$color-lightgray: #898F99;
+$color-lighter: #e7e8ea;
+$color-lightest: #f8f8f9;
+$color-yellow: #faff18;
+$color-red: #ed2f78;
+$color-blue: #1689ff;
+$color-blue-lightest: #f0f8ff;
+$color-amazon: #ff9900;
+$color-rakuten: #bf0000;
+
+/* space */
+$base-space: 8px;
+$space-xxsmall: $base-space;
+$space-xsmall: calc($base-space * 2);
+$space-small: calc($base-space * 3);
+$space-medium: calc($base-space * 4);
+$space-large: calc($base-space * 5);
+$space-xlarge: calc($base-space * 6);
+$space-xxlarge: calc($base-space * 7);
+$space-xxxlarge: calc($base-space * 8);

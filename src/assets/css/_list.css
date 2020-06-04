@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+.list__blog {
+  padding: $space-large 0;
+  &:first-of-type {
+    padding-top: unset;
+  }
+  & a {
+    width: 330px;
+    & .list__blog--image {
+      overflow: hidden;
+      border-radius: $space-xsmall;
+    }
+    @media(--breakPC) {
+      width: 33%;
+    }
+    @media(--iPad) {
+      width: 100%;
+    }
+  }
+  & .list__blog--contents {
+    width: 660px;
+    & .title {
+      margin-top: -4px;
+    }
+    & .description {
+      font-size: 16px;
+    }
+    @media(--breakPC) {
+      width: 65%;
+    }
+    @media(--iPad) {
+      margin-top: $space-small;
+      width: 100%;
+    }
+  }
+}

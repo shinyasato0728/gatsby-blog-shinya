@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+.tab__wrapper {
+  & .tabs__link--wrapper {
+    @media(--smartphone) {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 0 $space-xsmall;
+    }
+  }
+  & a {
+    display: inline-block;
+    color: $color-lightgray;
+    background: $color-lightest;
+    margin-right: $space-xsmall;
+    &:last-of-type {
+      margin-right: unset;
+    }
+  }
+  & .link--active {
+    color: $color-white;
+    background: $color-black;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+  }
+  @media(--smartphone) {
+      width: calc(100% + 32px);
+      margin-left: -16px;
+  }
+}

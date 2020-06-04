@@ -1,0 +1,141 @@
+@charset 'utf-8';
+
+@reset-global pc;
+
+* { box-sizing: border-box;}
+
+body {
+  color: $color-darker;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-feature-settings: "palt";
+  letter-spacing: 1px;
+  @media(--smartphone) {
+    font-size: 16px;
+  }
+}
+
+main {
+  width: $large-width;
+  margin: 140px auto 80px;
+  flex: 1;
+  @media(--breakPC) {
+    width: 100%;
+    padding: 0 $space-small;
+  }
+  @media(--smartphone) {
+    margin: 120px auto 60px;
+    padding: 0 $space-xsmall;
+  }
+}
+
+img { 
+  display: block;
+  width: 100%;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+button { 
+  transition: 0.3s; 
+  background: unset; 
+  border: unset; 
+  outline: unset; 
+  padding: unset; 
+  cursor: pointer;
+}
+
+hr { 
+  margin: $space-xxlarge 0; 
+  border: 0;
+  border-top: 1px solid $color-darkgray;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: $fw-bold;
+  @media(--iPad) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: $fw-bold;
+  @media(--iPad) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: $fw-bold;
+  @media(--iPad) {
+    font-size: 20px;
+  }
+}
+
+em {
+  font-style: unset;
+  font-weight: $fw-bold;
+}
+
+a {
+  color: $color-darker;
+  word-break: break-all;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.4;
+    @media(--smartphone) {
+      opacity: unset;
+    }
+  }
+}
+
+p {
+  margin: $space-xlarge 0;
+  @media(--smartphone) {
+    margin: $space-medium 0;
+  }
+  &:first-of-type { margin-top: unset;}
+  &:last-of-type { margin-bottom: unset;}
+}
+
+blockquote {
+  position: relative;
+  font-size: 16px;
+  padding: $space-medium;
+  margin: $space-medium 0;
+  border: 1px solid $color-lighter;
+  border-radius: $radius;
+  &:before, &:after {
+    position: absolute;
+    content: '“';
+    font-size: 100px;
+    font-family: sans-serif;
+    color: color($color-lighter a(40%));
+  }
+  &:before {
+    top: -40px;
+    left: $space-xxsmall;
+  }
+  &:after {
+    bottom: -40px;
+    right: $space-xxsmall;
+    transform: rotate(-180deg);
+  }
+  & p {
+    position: relative;
+    z-index: 1;
+    line-height: normal;
+    &:first-of-type { margin-top: unset !important;}
+    &:last-of-type { margin-bottom: unset !important;}
+  }
+  @media(--smartphone) {
+    padding: $space-small;
+  }
+}
+
+iframe {
+  border: none;
+}

@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+.body__base--wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.twitter-tweet {
+  margin: auto;
+}

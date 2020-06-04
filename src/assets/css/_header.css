@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+header {
+  transition: 0.5s;
+  padding: $space-xsmall;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 9999;
+  font-size: 26px;
+  & .title {
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    & a {
+      color: $color-black;
+    }
+    @media(--smartphoneSS) {
+      font-size: 18px;
+    }
+  }
+}
+
+.header--hide {
+  top: -70px !important;
+}

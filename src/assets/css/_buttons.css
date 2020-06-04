@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+.button__link--tags {
+  transition: 0.5s;
+  background: $color-yellow;
+  font-size: 16px;
+  width: 280px;
+  height: 60px;
+  position: fixed;
+  right: $space-small;
+  bottom: $space-small;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px color($color-yellow a(60%));
+  & .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: $space-xxsmall;
+  }
+  @media(--smartphone) {
+    width: unset;
+    max-width: 100%;
+    left: $space-xsmall;
+    right: $space-xsmall;
+  }
+}
+
+.link__tags--hide {
+  bottom: -70px !important;
+}
+
+.button__link {
+  @mixin buttonLink;
+  &.is--primary {
+      color: $color-white;
+      background: $color-darker;
+  }
+  &.is--yellow {
+      background: $color-yellow;
+  }
+  &.is--amazon {
+      background: $color-amazon;
+  }
+  &.is--rakuten {
+      color: $color-white;
+      background: $color-rakuten;
+  }
+}

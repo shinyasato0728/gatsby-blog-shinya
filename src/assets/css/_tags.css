@@ -1,0 +1,72 @@
+@charset 'utf-8';
+
+.tags__wrapper {
+  & p {
+    color: $color-darkgray;
+    font-size: 16px;
+    margin: unset;
+    @media(--iPad) {
+      font-size: 14px;
+    }
+  }
+  & .tag__link {
+    padding: 4px 12px;
+    margin-right: $space-xxsmall;
+    color: $color-darkgray;
+    background: $color-lightest;
+  }
+  & .link--active {
+    color: $color-white;
+    background: $color-black;
+  }
+  & .icon {
+    width: 54px;
+    height: 54px;
+    margin-right: $space-xsmall;
+  }
+}
+
+.tags__page--wrapper {
+  & .tags__page--contents {
+    margin-bottom: $space-xlarge;
+    border-bottom: 1px solid $color-lighter;
+    & .bg__wrapper {
+      overflow: hidden;
+      height: 200px;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 0 8px 20px color(#000000 a(10%));
+      @media(--smartphone) {
+        height: 150px;
+      }
+      & strong {
+        font-size: 28px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: color(#ffffff a(80%));
+        @media(--smartphone) {
+          font-size: 24px;
+        }
+      }
+    }
+    & .is--bg__blog {
+      background-image: url("/images/list/bg_blog.jpg");
+    }
+    & .is--bg__education {
+      background-image: url("/images/list/bg_education.jpg");
+    }
+    & .tags__page--list {
+      & a {
+        margin-right: $space-small;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: unset;
+      border-bottom: unset;
+    }
+  }
+  @media(--iPad) {
+    width: 100%;
+  }
+}

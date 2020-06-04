@@ -1,0 +1,22 @@
+backend:
+  name: gitlab
+  repo: shinyasato/shinya-it
+  branch: master
+
+media_folder: static/images/blog
+public_folder: /images/blog
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    fields:
+      - { name: "path", label: "Path", widget: "string" }
+      - { name: "date", label: "Date", widget: "date" }
+      - { name: "thumbnail", label: "Thumbnail Image", widget: "image" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "tags", label: "Tags", widget: "list" }
+      - { name: "description", label: "Description", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }

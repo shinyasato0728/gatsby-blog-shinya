@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+@define-mixin buttonLink {
+  font-size: 16px;
+  font-weight: $fw-bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-xsmall;
+  margin: $space-small auto 0;
+  width: 100%;
+  max-width: 460px;
+  height: 70px;
+  border-radius: $radius;
+  border: 1px solid $color-lightest;
+  background: $color-white;
+  box-shadow: 0 4px 24px color($color-darker a(10%));
+}
+
+@define-mixin ulolStyle {
+  margin: $space-xxsmall 0;
+  padding: $space-xsmall $space-xsmall $space-xsmall $space-xlarge;
+  border-radius: $radius;
+  background: color($color-blue a(8%));
+  & li {
+    & p {
+      margin: unset !important;
+    }
+  }
+  @media(--smartphone) {
+    padding: $space-xxsmall $space-xxsmall $space-xxsmall $space-large;
+  }
+}
