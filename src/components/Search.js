@@ -110,6 +110,7 @@ const Search = props => {
       <div className="search__input--inner u-pa-16 u-ta-r u-w-100">
         <input
           type="text"
+          aria-label="text"
           placeholder="Search..."
           onFocus={onFocus}
           onBlur={onBlur}
