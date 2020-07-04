@@ -56,6 +56,9 @@
     & .is--bg__education {
       background-image: url("/images/list/bg_education.jpg");
     }
+    & .is--bg__jobs {
+      background-image: url("/images/list/bg_jobs.jpg");
+    }
     & .tags__page--list {
       & a {
         margin-right: $space-small;

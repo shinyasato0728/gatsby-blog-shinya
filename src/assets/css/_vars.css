@@ -25,10 +25,8 @@ $small-width: 600px;
 $radius: 8px;
 
 /* font-weight */
-$fw-thin: 300;
-$fw-medium: 500;
+$fw-medium: 400;
 $fw-bold: 700;
-$fw-exbold: 900;
 
 /* colors */
 $color-white: #ffffff;

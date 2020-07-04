@@ -22,9 +22,15 @@
     width: 660px;
     & .title {
       margin-top: -4px;
+      @media(--iPad) {
+        font-size: 20px;
+      }
     }
     & .description {
       font-size: 16px;
+      @media(--iPad) {
+        font-size: 13px;
+      }
     }
     @media(--breakPC) {
       width: 65%;

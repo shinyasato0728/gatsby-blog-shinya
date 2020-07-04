@@ -27,6 +27,11 @@ const TagsPage = ({
           <strong className="u-fw-b u-pa-32 u-pt-16 u-pb-16 u-d-flex u-ai-c u-fw-m u-w-100">教育</strong>
         </Link>
       </div>
+      <div className="tags__page--contents u-pb-48">
+        <Link className="bg__wrapper is--bg__jobs u-bg-cover u-d-flex" to="/tags/転職">
+          <strong className="u-fw-b u-pa-32 u-pt-16 u-pb-16 u-d-flex u-ai-c u-fw-m u-w-100">転職</strong>
+        </Link>
+      </div>
       <h2 className="u-w-small u-m-0a">全てのタグから記事を探す</h2>
       <div className="tags__page--contents u-pb-48">
         <ul className="tags__page--list u-pa-reset u-mt-24 u-d-flex u-d-flex-wp u-ai-fe">

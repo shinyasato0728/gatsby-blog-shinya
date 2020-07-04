@@ -5,7 +5,7 @@ thumbnail: /images/blog/2020.05.22_02-top.jpg
 title: 【スマホでも使える】Twitterを100倍便利にするツール「Tweet Deck」の、スマホでの使い方を説明します
 tags:
   - SNS
-  - 便利なサービス
+  - サービス
 description: >-
   公式でTwitterを100倍便利にするツールがあります。それが、「Tweet Deck」です。今回は、「Tweet Deck」のスマホでの使い方を、ご説明いたします。
 ---

@@ -63,6 +63,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+            },
+          },
+          {
             resolve: "gatsby-remark-external-links"
           },
           {
@@ -71,6 +77,7 @@ module.exports = {
         ]
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-twitter`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-netlify-cms`,

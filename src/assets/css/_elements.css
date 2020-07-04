@@ -10,7 +10,7 @@ body {
   font-size: $base-font-size;
   font-feature-settings: "palt";
   letter-spacing: 1px;
-  @media(--smartphone) {
+  @media(--iPad) {
     font-size: 16px;
   }
 }
@@ -52,10 +52,10 @@ hr {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: $fw-bold;
   @media(--iPad) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -63,7 +63,7 @@ h2 {
   font-size: 30px;
   font-weight: $fw-bold;
   @media(--iPad) {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -71,7 +71,7 @@ h3 {
   font-size: 24px;
   font-weight: $fw-bold;
   @media(--iPad) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -128,11 +128,20 @@ blockquote {
     position: relative;
     z-index: 1;
     line-height: normal;
+    margin: $space-xsmall 0;
     &:first-of-type { margin-top: unset !important;}
     &:last-of-type { margin-bottom: unset !important;}
   }
   @media(--smartphone) {
+    font-size: 14px;
     padding: $space-small;
+  }
+}
+
+code {
+  font-size: 16px !important;
+  @media(--smartphone) {
+    font-size: 14px !important;
   }
 }
 

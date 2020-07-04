@@ -10,16 +10,35 @@ header {
   height: 70px;
   z-index: 9999;
   font-size: 26px;
-  & .title {
-    font-size: 22px;
+  & .title, & .tags {
     position: relative;
     z-index: 1;
+  }
+  & .title {
+    font-size: 22px;
+    margin-right: $space-xsmall;
     & a {
       color: $color-black;
+    }
+    @media(--smartphone) {
+      font-size: 20px;
+      margin-right: $space-xxsmall;
     }
     @media(--smartphoneSS) {
       font-size: 18px;
     }
+  }
+  & .tags {
+    background-image: url("/images/icons/tag.svg");
+    background-position: center left;
+    background-size: $space-xsmall;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+  }
+  & .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
   }
 }
 

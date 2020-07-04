@@ -21,6 +21,11 @@
   & ul {
     max-height: 300px;
     overflow: scroll;
+    @media(--smartphone) {
+      max-height: none;
+      height: 100vh;
+      padding-bottom: 560px !important;
+    }
   }
   @media(--smartphone) {
     width: 100%;
