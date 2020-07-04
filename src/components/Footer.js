@@ -19,6 +19,7 @@ const Footer = () => {
             <ul className="u-pa-reset u-list-none u-b-reset u-bg-reset u-d-flex u-mt-16">
               <li><Link className="u-c-darkgray" to="/tags/ブログ術">ブログ術</Link></li>
               <li><Link className="u-c-darkgray" to="/tags/教育">教育</Link></li>
+              <li><Link className="u-c-darkgray" to="/tags/転職">転職</Link></li>
             </ul>
           </div>
         </div>

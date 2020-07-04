@@ -1,8 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-[シンヤのITブログ](https://shinya-it.com/?link=github)のRepository
-
-使われている環境は、[こちらから詳しく見ることができます](https://shinya-it.com/blog/environmental_explanation?link=github)
+[シンヤのITブログ](https://shinya-it.com/)のRepository
 
 # Version
 
@@ -89,17 +87,3 @@ $ yarn develop
 [Netlifyの設定](https://docs.netlify.com/)
 
 [NetlifyCMSの設定](https://www.netlifycms.org/docs/intro/)
-
----
-
-gatsby-config.js > サイトの設定
-
-gatsby-ssr > metaタグの設定
-
-static/admin > NetlifyCMSの設定
-
-このままでは動かないので、事前にこちらを確認して設定を変更して下さい
-
----
-
-src/blog > ブログのディレクトリ。マークダウンで記事を書くだけです

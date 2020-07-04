@@ -4,10 +4,6 @@ import SEO from '../components/Seo';
 
 import Header from '../components/Header';
 
-import {
-  TagsLinkButton
-} from '../components/Buttons';
-
 import { Link, graphql } from 'gatsby';
 
 import _ from "lodash";
@@ -105,11 +101,14 @@ const Tags = ({ pageContext, data }) => {
                 <p className="description u-c-darkgray">{description}</p>
                 <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
                   <ul className="tags__wrapper u-pa-reset u-d-flex u-d-flex-wp u-ai-c">
-                    {tags.map(tag => {
-                      return (
-                        <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" activeClassName="link--active" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
-                      )
-                    })}
+                    {tags && tags.length > 0
+                        ? tags.map(tag => {
+                          return (
+                            <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" activeClassName="link--active" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
+                          )
+                        })
+                        : ""
+                    }
                   </ul>
                   <small className="u-c-lightgray u-fs-13 u-lineh-large">{date}</small>
                 </div>
@@ -118,7 +117,6 @@ const Tags = ({ pageContext, data }) => {
           )
         })}
       </div>
-      <TagsLinkButton />
     </div>
   )
 }

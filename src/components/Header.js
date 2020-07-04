@@ -23,10 +23,13 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="header u-d-flex u-d-flex-wp u-jc-sb u-ai-c u-bb-lighter u-bg-white u-w-100">
-        <h1 className="title">
-          <Link to="/">シンヤのITブログ</Link>
-        </h1>
+      <header className="header u-d-flex u-jc-sb u-ai-c u-bb-lighter u-bg-white u-w-100">
+        <div className="u-d-flex u-ai-c">
+          <h1 className="title">
+            <Link to="/">シンヤのITブログ</Link>
+          </h1>
+          <Link className="tags u-c-darkgray u-fs-13 u-d-flex u-jc-c u-ai-c" to="/tags">タグ一覧</Link>
+        </div>
         <Search />
       </header>
     )

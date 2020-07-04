@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/Seo';
 
 import Header from '../components/Header';
 
-import {
-  TagsLinkButton
-} from '../components/Buttons';
-
 import _ from "lodash";
 
-const AllBlogPage = ({ data }) => {
+const AllBlogPage = ({ data, location }) => {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({'event': 'optimize.activate'});
+  }, [location.pathname])
+
   const {edges: posts, totalCount} = data.allMarkdownRemark;
   return (
     <div>
@@ -37,11 +38,14 @@ const AllBlogPage = ({ data }) => {
                 <p className="description u-c-darkgray">{frontmatter.description}</p>
                 <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
                   <ul className="tags__wrapper u-pa-reset u-d-flex u-d-flex-wp u-ai-c">
-                    {frontmatter.tags.map(tag => {
-                      return (
-                        <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
-                      )
-                    })}
+                    {post.frontmatter.tags && post.frontmatter.tags.length > 0
+                        ? post.frontmatter.tags.map(tag => {
+                          return (
+                            <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
+                          )
+                        })
+                        : ""
+                    }
                   </ul>
                   <small className="u-c-lightgray u-fs-13 u-lineh-large">{frontmatter.date}</small>
                 </div>
@@ -50,7 +54,6 @@ const AllBlogPage = ({ data }) => {
           );
         })}
       </div>
-      <TagsLinkButton />
     </div>
   );
 };

@@ -6,8 +6,8 @@
   }
   & h2 {
     margin: $space-xxlarge 0;
-    @media(--smartphone) { 
-      margin: $space-xlarge 0;
+    @media(--iPad) { 
+      margin: $space-large 0;
     }
   }
   & h3 {
@@ -15,8 +15,9 @@
     padding: $space-xsmall $space-small;
     background: $color-lightest;
     border-radius: $radius;
-    @media(--smartphone) { 
+    @media(--iPad) { 
       margin: $space-xlarge 0;
+      padding: $space-xsmall;
     }
   }
   & h4 {
@@ -62,13 +63,11 @@
     &:last-of-type { margin-bottom: $space-large;}
   }
   & strong {
-    margin: 0 4px;
     background: linear-gradient(transparent 60%,color(#ffdfef a(100%)) 0);
   }
   & img {
     border-radius: 20px;
     margin: $space-large auto;
-    border: 1px solid $color-lighter;
   }
   & video {
     width: 100%;
@@ -152,6 +151,40 @@
       margin: auto;
     }
   }
+  & .post--contents {
+    & ul {
+      background: unset;
+      border: 1px solid $color-lighter;
+      list-style-type: none;
+      padding: $space-xsmall $space-xsmall 0 $space-xsmall;
+      margin: $space-xsmall 0;
+      & li {
+        border-bottom: 1px solid $color-lighter;
+        & a {
+          display: block;
+          padding: $space-xxsmall 0;
+          width: 100%;
+          text-decoration: none;
+          font-size: 14px;
+          color: $color-darkgray;
+        }
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+      &::before {
+        content: '目次';
+      }
+      &:nth-child(n + 2) {
+        border: none;
+        margin: 0;
+        padding: 0 $space-xsmall;
+        &::before {
+          content: '';
+        }
+      }
+    }
+  }
   & .post__movie--wrap {
     position: relative;
     margin: 60px auto;
@@ -169,6 +202,35 @@
     @media(--smartphone) { 
       width: 100%;
     }
+  }
+  & .breadcrumb {
+    margin-right: 12px;
+    &::after {
+      position: absolute;
+      right: -10px;
+      content: '、';
+    }
+    &:last-of-type {
+      margin-right: $space-small;
+      &::after {
+        position: absolute;
+        right: -16px;
+        content: '>';
+      }
+    }
+  }
+  & .badge--store {
+    display: block;
+    & img {
+      border-radius: 0;
+      margin: auto;
+    }
+  }
+  & .badge--apple__store {
+    max-width: 160px;
+  }
+  & .badge--google__store {
+    max-width: 200px;
   }
   @media(--iPad) {
     width: 100%;
