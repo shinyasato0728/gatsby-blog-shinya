@@ -18,6 +18,7 @@ const Tags = ({ pageContext, data }) => {
   const seoHtmlDescription = `${tag}とは「HyperText Markup Language（ハイパーテキストマークアップランゲージ）」の略で、ホームページの「骨組み」を作るために使う言語です。${tag}はホームページを作るための「設計図」のようなもので、${tag}の情報をもとに、ブラウザがDOMツリーを作り、ホームページを表示させます。${tag}でホームページの「骨組み」を作ったら、次はCSSを使って「見た目」を作っていきます。`
   const seoCssDescription = `${tag}とは「Cascading Style Sheets（カスケーディングスタイルシート）」の略で、ホームページの「見た目」の装飾を行う言語です。ホームページはたくさんのページで作られていて、一つ一つデザインを変えていくのは大変なので、一度にデザインを変更できるようにするために、${tag}が生まれました。${tag}を使えば、一度に見た目を全て変えることができます。`
   const seoMarketingDescription = `${tag}とは、「自分たちが取り扱っている商品が、売れるようにする取り組み」のことです。お客様の行動原理を考えて、施策を考えたり、施策のテストを行ったり、広告を出したり管理したりする仕事です。よく「売れる仕組みを作る仕事」と言われています。商品開発から販売まで、一貫して考えていく仕事と言えます。`
+  const seoDlabo = `${tag}とは、メンタリストDaiGoさん最新の研究をもとに、人生をよくする知識を配信しているサービスです。分かりやすくいうと、DaiGoさんが「知識のNetflix」を目指すサービスです。現在はニコニコチェンネルに配信されている動画を視聴するサービスですが、今後Dラボ限定の動画も配信されるそうです。`
   const seoOtherDescription = `シンヤのITブログでは、${tag}の情報だけでなく、「ちょっと役に立つITのお便り」をテーマに、IT系の情報をお届けしております。他の記事にご興味がある方は、「タグから記事を探す」ボタンを押してください。`
 
   const tagHeader = (() => {
@@ -59,6 +60,16 @@ const Tags = ({ pageContext, data }) => {
           <div className="tags__description">
             <p>{tag}の記事が{totalCount}件ございます。</p>
             <p>{seoMarketingDescription}</p>
+          </div>
+        </div>
+      );
+      case "Dラボ": return (
+        <div className="tags__wrapper">
+          <SEO title={setTitle} description={seoDlabo} />
+          <h1>{tag}</h1>
+          <div className="tags__description">
+            <p>{tag}の記事が{totalCount}件ございます。</p>
+            <p>{seoDlabo}</p>
           </div>
         </div>
       );

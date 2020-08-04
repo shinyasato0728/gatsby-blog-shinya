@@ -18,6 +18,8 @@ body {
 main {
   width: $large-width;
   margin: 140px auto 80px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   flex: 1;
   @media(--breakPC) {
     width: 100%;
@@ -140,6 +142,12 @@ blockquote {
 
 code {
   font-size: 16px !important;
+  &.language-text {
+    padding: 4px !important;
+    color: $color-darker !important;
+    text-shadow: none !important;
+    background: color($color-blue a(8%)) !important;
+  }
   @media(--smartphone) {
     font-size: 14px !important;
   }

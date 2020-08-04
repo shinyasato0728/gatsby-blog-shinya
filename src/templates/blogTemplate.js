@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/Seo';
 
@@ -8,7 +8,12 @@ import _ from "lodash";
 
 import '../assets/css/module/prism.min.css';
 
-const BlogTemplate = (props) => {
+const BlogTemplate = (props, location) => {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({'event': 'optimize.activate'});
+  }, [location.pathname])
+
   const { data } = props;
   const { markdownRemark: post } = data;
   const { site: meta } = data;

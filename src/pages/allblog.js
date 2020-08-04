@@ -21,6 +21,7 @@ const AllBlogPage = ({ data, location }) => {
         <h1>記事一覧</h1>
         <p className="u-c-darkgray">記事数：{totalCount}</p>
       </div>
+      <p className="u-list-asterisk u-w-100 u-fs-13 u-c-lightgray u-mt-8">全ての記事が表示されない場合は、ページ更新をお試しください。</p>
       <div className="u-pt-40 u-mt-40 u-bt-lighter">
         {posts.map(({node: post}) => {
           const {frontmatter} = post;
