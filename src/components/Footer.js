@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="footer__copy u-w-100 u-ta-c u-bg-black u-c-lightgray u-pa-8 u-pt-32 u-pb-32">
-        <small>Copyright - Shinya Sato, 2020 All Rights Reserved.</small>
+        <small>Copyright - Shinya Sato, {new Date().getFullYear()} All Rights Reserved.</small>
       </div>
     </div>
   )
