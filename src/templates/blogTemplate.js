@@ -25,11 +25,11 @@ const BlogTemplate = (props, location) => {
       <section className="post__wrapper u-w-small u-m-0a u-lineh-medium">
         <h1 className="title">{post.frontmatter.title}</h1>
         <div className="u-mt-16 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-          <ul className="tags__wrapper u-pa-reset u-b-reset u-bg-reset u-list-none u-d-flex u-d-flex-wp u-ai-c">
+          <ul className="tags__wrapper u-pa-reset u-b-reset u-bg-reset u-list-none">
             {post.frontmatter.tags && post.frontmatter.tags.length > 0
                 ? post.frontmatter.tags.map(tag => {
                   return (
-                    <li key={tag}><Link className="tag__link u-fw-b u-fs-14 u-td-none u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
+                    <li className="u-mt-reset" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-td-none u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
                   )
                 })
                 : ""

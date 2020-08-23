@@ -26,7 +26,7 @@ const AllBlogPage = ({ data, location }) => {
         {posts.map(({node: post}) => {
           const {frontmatter} = post;
           return (
-            <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb" key={post.id}>
+            <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb u-ai-fs" key={post.id}>
               <Link to={frontmatter.path}>
                 <figure className="list__blog--image">
                   <img src={frontmatter.thumbnail} alt={frontmatter.title} decoding="async" loading="lazy" />
@@ -38,11 +38,11 @@ const AllBlogPage = ({ data, location }) => {
                 </h2>
                 <p className="description u-c-darkgray">{frontmatter.description}</p>
                 <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                  <ul className="tags__wrapper u-pa-reset u-d-flex u-d-flex-wp u-ai-c">
+                  <ul className="tags__wrapper u-pa-reset">
                     {post.frontmatter.tags && post.frontmatter.tags.length > 0
                         ? post.frontmatter.tags.map(tag => {
                           return (
-                            <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
+                            <li key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
                           )
                         })
                         : ""

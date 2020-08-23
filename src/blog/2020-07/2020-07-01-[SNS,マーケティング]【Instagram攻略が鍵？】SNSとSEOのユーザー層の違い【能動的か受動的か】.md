@@ -4,6 +4,7 @@ date: 2020-07-01T19:00:00
 thumbnail: /images/blog/2020.07.01_01-top.jpg
 title: 【Instagram攻略が鍵？】SNSとSEOのユーザー層の違い【能動的か受動的か】
 tags:
+  - SEO
   - SNS
   - マーケティング
 description: >-

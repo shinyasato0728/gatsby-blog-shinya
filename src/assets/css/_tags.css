@@ -9,9 +9,14 @@
       font-size: 14px;
     }
   }
+  & li {
+    display: inline-block;
+    margin-top: $space-xxsmall;
+    margin-bottom: $space-xxsmall;
+    margin-right: $space-xxsmall;
+  }
   & .tag__link {
     padding: 4px 12px;
-    margin-right: $space-xxsmall;
     color: $color-darkgray;
     background: $color-lightest;
   }
@@ -67,6 +72,20 @@
     &:last-of-type {
       margin-bottom: unset;
       border-bottom: unset;
+    }
+  }
+  & .tags__page--all {
+    & li {
+      margin: 0 $space-xsmall $space-small 0;
+      @media(--smartphone) {
+        margin: 0 $space-xsmall $space-xsmall 0;
+      }
+      & a {
+        padding: $space-xxsmall $space-xsmall;
+        @media(--smartphone) {
+          font-size: 14px;
+        }
+      }
     }
   }
   @media(--iPad) {

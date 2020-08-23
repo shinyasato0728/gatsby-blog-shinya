@@ -29,15 +29,9 @@ footer {
   }
   & .footer__contents {
     width: $large-width;
-    justify-content: space-between;
     & .footer__title--box {
-      width: 400px;
       @media(--breakPC) {
         width: 100%;
-        padding-top: $space-large;
-        margin-top: $space-large;
-        border-top: 1px solid $color-lighter;
-        order: 2;
       }
     }
     & .footer__tag--box {
