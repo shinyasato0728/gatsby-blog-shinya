@@ -25,7 +25,7 @@ main {
     width: 100%;
     padding: 0 $space-small;
   }
-  @media(--smartphone) {
+  @media(--iPad) {
     margin: 120px auto 60px;
     padding: 0 $space-xsmall;
   }
@@ -104,39 +104,18 @@ p {
 }
 
 blockquote {
-  position: relative;
   font-size: 16px;
-  padding: $space-medium;
-  margin: $space-medium 0;
-  border: 1px solid $color-lighter;
+  border: 2px solid $color-lightest;
   border-radius: $radius;
-  &:before, &:after {
-    position: absolute;
-    content: '“';
-    font-size: 100px;
-    font-family: sans-serif;
-    color: color($color-lighter a(40%));
-  }
-  &:before {
-    top: -40px;
-    left: $space-xxsmall;
-  }
-  &:after {
-    bottom: -40px;
-    right: $space-xxsmall;
-    transform: rotate(-180deg);
-  }
+  margin: $space-xlarge 0;
+  padding: $space-small;
   & p {
-    position: relative;
-    z-index: 1;
-    line-height: normal;
-    margin: $space-xsmall 0;
-    &:first-of-type { margin-top: unset !important;}
-    &:last-of-type { margin-bottom: unset !important;}
+    margin: 0 !important;
   }
   @media(--smartphone) {
     font-size: 14px;
-    padding: $space-small;
+    margin: $space-medium 0;
+    padding: $space-xsmall;
   }
 }
 
@@ -144,9 +123,9 @@ code {
   font-size: 16px !important;
   &.language-text {
     padding: 4px !important;
-    color: $color-darker !important;
+    color: $color-red !important;
     text-shadow: none !important;
-    background: color($color-blue a(8%)) !important;
+    background: $color-lightest !important;
   }
   @media(--smartphone) {
     font-size: 14px !important;

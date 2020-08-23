@@ -1,5 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-
 [シンヤのITブログ](https://shinya-it.com/?link=github)のRepository
 
 使われている環境は、[こちらから詳しく見ることができます](https://shinya-it.com/blog/environmental_explanation?link=github)

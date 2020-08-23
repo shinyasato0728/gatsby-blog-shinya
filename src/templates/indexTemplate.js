@@ -1,18 +1,25 @@
 import React, { useEffect } from "react";
 import { Link, graphql } from 'gatsby';
+
 import SEO from '../components/Seo';
 
 import Header from '../components/Header';
 
 import _ from "lodash";
 
-const IndexPage = ({ data, location }) => {
+const IndexTemplatePage = ({ data, location, pageContext }) => {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({'event': 'optimize.activate'});
   }, [location.pathname])
 
   const {edges: posts} = data.allMarkdownRemark;
+  const { currentPage, numPages } = pageContext
+  const isFirst = currentPage === 1
+  const isLast = currentPage === numPages
+  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
+  const nextPage = (currentPage + 1).toString()
+
   return (
     <div>
       <SEO title="ようこそ！シンヤのITブログへ" keywords={[`シンヤのITブログ`]} />
@@ -20,7 +27,7 @@ const IndexPage = ({ data, location }) => {
       {posts.map(({node: post}) => {
         const {frontmatter} = post;
         return (
-          <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb" key={post.id}>
+          <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb u-ai-fs" key={post.id}>
             <Link to={frontmatter.path}>
               <figure className="list__blog--image">
                 <img src={frontmatter.thumbnail} alt={frontmatter.title} decoding="async" loading="lazy" />
@@ -32,11 +39,11 @@ const IndexPage = ({ data, location }) => {
               </h2>
               <p className="description u-c-darkgray">{frontmatter.description}</p>
               <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                <ul className="tags__wrapper u-pa-reset u-d-flex u-d-flex-wp u-ai-c">
+                <ul className="tags__wrapper u-pa-reset">
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0
                       ? post.frontmatter.tags.map(tag => {
                         return (
-                          <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
+                          <li key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
                         )
                       })
                       : ""
@@ -48,17 +55,27 @@ const IndexPage = ({ data, location }) => {
           </article>
         );
       })}
-      <div>
-        <Link className="button__link u-mt-56" to="/allblog">全ての記事を見る</Link>
+      <div className="u-o-hidden u-mt-40 u-mb-40">
+        {!isFirst && (
+          <Link className="u-f-left" to={prevPage} rel="prev">
+            ← 前のページへ
+          </Link>
+        )}
+        {!isLast && (
+          <Link className="u-f-right" to={nextPage} rel="next">
+            次のページへ →
+          </Link>
+        )}
       </div>
     </div>
   );
 };
 
 export const query = graphql`
-  query IndexQuery {
+  query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: 10
+      limit: $limit
+      skip: $skip
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { date: { ne: null } },fields: { draft: { eq: false } } }
     ) {
@@ -79,4 +96,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default IndexTemplatePage;

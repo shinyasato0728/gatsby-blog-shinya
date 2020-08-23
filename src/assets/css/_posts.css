@@ -185,6 +185,43 @@
       }
     }
   }
+  & .post__text--pre {
+    position: relative;
+    font-size: 16px;
+    padding: $space-small;
+    margin: $space-xlarge 0;
+    border: 2px solid $color-lightest;
+    border-radius: $radius;
+    &:before, &:after {
+      position: absolute;
+      content: '“';
+      font-size: 100px;
+      font-family: sans-serif;
+      color: color($color-lighter a(40%));
+    }
+    &:before {
+      top: -40px;
+      left: $space-xxsmall;
+    }
+    &:after {
+      bottom: -40px;
+      right: $space-xxsmall;
+      transform: rotate(-180deg);
+    }
+    & p {
+      position: relative;
+      z-index: 1;
+      line-height: 1.9;
+      margin: $space-xsmall 0;
+      &:first-of-type { margin-top: unset !important;}
+      &:last-of-type { margin-bottom: unset !important;}
+    }
+    @media(--smartphone) {
+      font-size: 14px;
+      margin: $space-medium 0;
+      padding: $space-xsmall;
+    }
+  }
   & .post__movie--wrap {
     position: relative;
     margin: 60px auto;

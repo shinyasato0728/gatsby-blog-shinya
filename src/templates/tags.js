@@ -19,7 +19,7 @@ const Tags = ({ pageContext, data }) => {
   const seoCssDescription = `${tag}とは「Cascading Style Sheets（カスケーディングスタイルシート）」の略で、ホームページの「見た目」の装飾を行う言語です。ホームページはたくさんのページで作られていて、一つ一つデザインを変えていくのは大変なので、一度にデザインを変更できるようにするために、${tag}が生まれました。${tag}を使えば、一度に見た目を全て変えることができます。`
   const seoMarketingDescription = `${tag}とは、「自分たちが取り扱っている商品が、売れるようにする取り組み」のことです。お客様の行動原理を考えて、施策を考えたり、施策のテストを行ったり、広告を出したり管理したりする仕事です。よく「売れる仕組みを作る仕事」と言われています。商品開発から販売まで、一貫して考えていく仕事と言えます。`
   const seoDlabo = `${tag}とは、メンタリストDaiGoさん最新の研究をもとに、人生をよくする知識を配信しているサービスです。分かりやすくいうと、DaiGoさんが「知識のNetflix」を目指すサービスです。現在はニコニコチェンネルに配信されている動画を視聴するサービスですが、今後Dラボ限定の動画も配信されるそうです。`
-  const seoOtherDescription = `シンヤのITブログでは、${tag}の情報だけでなく、「ちょっと役に立つITのお便り」をテーマに、IT系の情報をお届けしております。他の記事にご興味がある方は、「タグから記事を探す」ボタンを押してください。`
+  const seoOtherDescription = `シンヤのITブログでは、${tag}の情報だけでなく、「ちょっと役に立つITのお便り」をテーマに、主に初学者の方々に為になるIT系の情報をお届けいたします。その他面白いサービスのご紹介や、私が日々勉強している内容の情報発信なども行っていきます。`
 
   const tagHeader = (() => {
     switch (tag) {
@@ -99,7 +99,7 @@ const Tags = ({ pageContext, data }) => {
           const { tags } = node.frontmatter
           const { thumbnail } = node.frontmatter
           return (
-            <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb" key={slug}>
+            <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb u-ai-fs" key={slug}>
               <Link to={slug}>
                 <figure className="list__blog--image">
                   <img src={thumbnail} alt={title} decoding="async" loading="lazy" />
@@ -111,11 +111,11 @@ const Tags = ({ pageContext, data }) => {
                 </h2>
                 <p className="description u-c-darkgray">{description}</p>
                 <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                  <ul className="tags__wrapper u-pa-reset u-d-flex u-d-flex-wp u-ai-c">
+                  <ul className="tags__wrapper u-pa-reset">
                     {tags && tags.length > 0
                         ? tags.map(tag => {
                           return (
-                            <li className="u-lineh-large" key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" activeClassName="link--active" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
+                            <li key={tag}><Link className="tag__link u-fw-b u-fs-14 u-bo-radius" activeClassName="link--active" to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link></li>
                           )
                         })
                         : ""

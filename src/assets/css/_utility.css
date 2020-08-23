@@ -16,6 +16,15 @@
 .u-fw-m { font-weight: $fw-medium !important;}
 .u-fw-b { font-weight: $fw-bold !important;}
 
+/* float */
+.u-f-left { float: left !important;}
+.u-f-right { float: right !important;}
+
+/* overflow */
+.u-o-hidden {
+  overflow: hidden;
+}
+
 /* width */
 .u-w-20 { width: 20% !important; }
 .u-w-30 { width: 30% !important; }
@@ -105,6 +114,7 @@
 .u-jc-c { justify-content: center !important;}
 .u-jc-sb { justify-content: space-between !important;}
 .u-ai-c { align-items: center !important;}
+.u-ai-fs { align-items: flex-start !important;}
 .u-ai-fe { align-items: flex-end !important;}
 
 /* color */
@@ -130,7 +140,7 @@
 }
 
 /* border */
-.u-b-lightest { border: 1px solid $color-lightest !important;}
+.u-b-lightest { border: 2px solid $color-lightest !important;}
 .u-b-lighter { border: 1px solid $color-lighter !important;}
 .u-bb-lighter { border-bottom: 1px solid $color-lighter !important;}
 .u-bt-lighter { border-top: 1px solid $color-lighter !important;}
@@ -155,7 +165,7 @@
 .u-list-alpha { list-style-type: upper-alpha !important;}
 .u-list-arrow {
   position: relative;
-  padding-left: 20px;
+  padding-left: 24px;
   &:before {
     content: '→';
     position: absolute;
@@ -181,4 +191,17 @@
 .u-marker-yellow {
   margin: 0 4px;
   background: linear-gradient(transparent 60%,color($color-yellow a(100%)) 0);
+}
+
+/* pcsp */
+.is-only-pc {
+  @media(--iPad) {
+    display: none;
+  }
+}
+.is-only-sp {
+  display: none;
+  @media(--iPad) {
+    display: block;
+  }
 }
