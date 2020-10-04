@@ -39,7 +39,7 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
               </h2>
               <p className="description u-c-darkgray">{frontmatter.description}</p>
               <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                <ul className="tags__wrapper u-pa-reset">
+                <ul className="tags__wrapper u-pa-reset u-bg-reset u-list-none">
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0
                       ? post.frontmatter.tags.map(tag => {
                         return (
@@ -67,6 +67,7 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
           </Link>
         )}
       </div>
+      <Link className="button__link u-mt-56" to="/allblog">全ての記事を見る</Link>
     </div>
   );
 };

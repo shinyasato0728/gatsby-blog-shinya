@@ -121,18 +121,18 @@ description: >-
 
 主に以下のような特徴があります。
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>初めてでも「見慣れたデザイン」ができる</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">「紙とインク」から着想を得ているので、パソコンやスマホに馴染みがない人でも「見慣れたデザイン」が出来上がる</li>
+  <ul>
+    <li>「紙とインク」から着想を得ているので、パソコンやスマホに馴染みがない人でも「見慣れたデザイン」が出来上がる</li>
   </ul>
   <li><em>シンプルなデザイン</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">余分なものを徹底的に排除しているので、清潔感のあるシンプルなデザインが出来上がる</li>
+  <ul>
+    <li>余分なものを徹底的に排除しているので、清潔感のあるシンプルなデザインが出来上がる</li>
   </ul>
   <li><em>どのデバイスでも統一感が出せる</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">どのデバイスでも一貫したデザイン、操作性を追求しているので、統一感のあるデザインが出来上がる</li>
+  <ul>
+    <li>どのデバイスでも一貫したデザイン、操作性を追求しているので、統一感のあるデザインが出来上がる</li>
   </ul>
 </ul>
 

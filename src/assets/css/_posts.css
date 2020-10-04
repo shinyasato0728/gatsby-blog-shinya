@@ -5,13 +5,13 @@
     line-height: normal;
   }
   & h2 {
-    margin: $space-xxlarge 0;
+    margin: $space-xxxlarge 0;
     @media(--iPad) { 
-      margin: $space-large 0;
+      margin: $space-xlarge 0;
     }
   }
   & h3 {
-    margin: $space-xxlarge 0;
+    margin: $space-xxxlarge 0;
     padding: $space-xsmall $space-small;
     background: $color-lightest;
     border-radius: $radius;
@@ -42,18 +42,14 @@
       }
     }
   }
+  & h5 {
+    margin: $space-xxxlarge 0;
+    @media(--iPad) { 
+      margin: $space-xlarge 0;
+    }
+  }
   & strong {
     font-weight: $fw-bold;
-  }
-  & ul {
-    list-style-type: disc;
-  }
-  & ol {
-    list-style-type: decimal;
-  }
-
-  & ul, & ol {
-    @mixin ulolStyle;
   }
   & a {
       text-decoration: underline;
@@ -85,6 +81,7 @@
     border: 1px solid $color-lighter;
     border-radius: $radius;
     line-height: 1.5;
+    overflow: hidden;
     & dt {
       width: 100%;
       padding: $space-xsmall;
@@ -190,14 +187,14 @@
     font-size: 16px;
     padding: $space-small;
     margin: $space-xlarge 0;
-    border: 2px solid $color-lightest;
+    background: $color-lightest;
     border-radius: $radius;
     &:before, &:after {
       position: absolute;
       content: '“';
       font-size: 100px;
       font-family: sans-serif;
-      color: color($color-lighter a(40%));
+      color: $color-lighter;
     }
     &:before {
       top: -40px;
@@ -271,5 +268,28 @@
   }
   @media(--iPad) {
     width: 100%;
+  }
+  & .arrow--ul {
+    padding: $space-xsmall $space-small;
+    list-style-type: none;
+    & > ul {
+      padding: 0;
+      background: none;
+      list-style-type: none;
+      margin: 0 0 $space-small 0;
+      & li {
+        position: relative;
+        padding-left: 24px;
+        &:before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          display: block;
+        }
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }

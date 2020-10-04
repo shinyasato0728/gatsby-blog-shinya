@@ -93,30 +93,30 @@ description: >-
 それぞれ英語から何を表しているか、わかりやすいのではないかと思います。  
 具体的にいうと、
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>path</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">ページのpath（URL）です</li>
+  <ul>
+    <li>ページのpath（URL）です</li>
   </ul>
   <li><em>date</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">ブログを投稿した日時です</li>
+  <ul>
+    <li>ブログを投稿した日時です</li>
   </ul>
   <li><em>thumbnail</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">一覧画面やOGP、ファーストビューの写真です</li>
+  <ul>
+    <li>一覧画面やOGP、ファーストビューの写真です</li>
   </ul>
   <li><em>title</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">ブログのタイトルです</li>
+  <ul>
+    <li>ブログのタイトルです</li>
   </ul>
   <li><em>tags</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">タイトルや記事の一番下に表示される、ブログのタグです</li>
+  <ul>
+    <li>タイトルや記事の一番下に表示される、ブログのタグです</li>
   </ul>
   <li><em>description</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">一覧画面やOGPの、description（説明文）です</li>
+  <ul>
+    <li>一覧画面やOGPの、description（説明文）です</li>
   </ul>
 </ul>
 
@@ -186,34 +186,34 @@ React.jsについては、以前開設いたしましたこちらの記事もご
 
 React.jsには、主に以下のような特徴があります。
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>JSX</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">JavaScriptの中にHTMLを書く、「JSX」という特殊な文法でコードを書いていきます。</li>
+  <ul>
+    <li>JavaScriptの中にHTMLを書く、「JSX」という特殊な文法でコードを書いていきます。</li>
   </ul>
   <li><em>処理が高速</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">「仮想DOM」という技術を使い、部分的に表示を切り替える事で、高い処理速度を実現しています。</li>
+  <ul>
+    <li>「仮想DOM」という技術を使い、部分的に表示を切り替える事で、高い処理速度を実現しています。</li>
   </ul>
   <li><em>コンポーネントの管理がしやすい</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">複雑な条件も記載でき、かつコンポーネントに条件も記載できるので、複雑な計算式もコンポーネントにまとめて管理ができます。</li>
+  <ul>
+    <li>複雑な条件も記載でき、かつコンポーネントに条件も記載できるので、複雑な計算式もコンポーネントにまとめて管理ができます。</li>
   </ul>
   <li><em>拡張性が高い</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">React様に開発されたプラグインが、npmにたくさんアップロードされています。</li>
+  <ul>
+    <li>React様に開発されたプラグインが、npmにたくさんアップロードされています。</li>
   </ul>
   <li><em>Facebook製</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">Facebook社が開発を行っているので、信頼度が高いフレームワークとなっております。</li>
+  <ul>
+    <li>Facebook社が開発を行っているので、信頼度が高いフレームワークとなっております。</li>
   </ul>
   <li><em>日本語のドキュメントが少ない</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">Facebook公式が開発しているため、日本語のドキュメントは少ないです。</li>
+  <ul>
+    <li>Facebook公式が開発しているため、日本語のドキュメントは少ないです。</li>
   </ul>
   <li><em>学習コストが高い</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">日本語のドキュメントの少なさに加えて、条件式とHTMLを一緒のコンポーネントに書くJSX独特の文法に慣れるのに、多少時間がかかります。</li>
+  <ul>
+    <li>日本語のドキュメントの少なさに加えて、条件式とHTMLを一緒のコンポーネントに書くJSX独特の文法に慣れるのに、多少時間がかかります。</li>
   </ul>
 </ul>
 
@@ -227,34 +227,34 @@ GatsbyJSについては、以前開設いたしましたこちらの記事もご
 
 GatsbyJSには、主に以下のような特徴があります。
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>データベースなしでブログが作れる</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">サーバー代やメンテナンスコストがかかりません。</li>
+  <ul>
+    <li>サーバー代やメンテナンスコストがかかりません。</li>
   </ul>
   <li><em>SPAでブログが作れる</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">非同期通信であるSPAを使って、スマホアプリと同じように滑らかなブログが作れます。</li>
+  <ul>
+    <li>非同期通信であるSPAを使って、スマホアプリと同じように滑らかなブログが作れます。</li>
   </ul>
   <li><em>デザインを自由に切り替えられる</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">WordPressと同じように、テーマを切り替える事でデザインも自由に変えられます。</li>
+  <ul>
+    <li>WordPressと同じように、テーマを切り替える事でデザインも自由に変えられます。</li>
   </ul>
   <li><em>ルーティングを自動で行ってくれる</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">個別で指定したルーティングを、Gatsby.jsは自動的に行ってくれます。</li>
+  <ul>
+    <li>個別で指定したルーティングを、Gatsby.jsは自動的に行ってくれます。</li>
   </ul>
   <li><em>プラグインがある</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">Gatsby.jsには便利なプラグインが、たくさん用意されています。</li>
+  <ul>
+    <li>Gatsby.jsには便利なプラグインが、たくさん用意されています。</li>
   </ul>
   <li><em>初学者向けではない</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">React.js自体が「JSX」という特殊な文法でコードを書いていく為、初学者の方は対応は難しくなっています。</li>
+  <ul>
+    <li>React.js自体が「JSX」という特殊な文法でコードを書いていく為、初学者の方は対応は難しくなっています。</li>
   </ul>
   <li><em>Webサービス作りには向いていない</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">フレームワーク外の事は行いにくく、かつブログ作成に特化している為、Webサービス作りには向いていない。</li>
+  <ul>
+    <li>フレームワーク外の事は行いにくく、かつブログ作成に特化している為、Webサービス作りには向いていない。</li>
   </ul>
 </ul>
 

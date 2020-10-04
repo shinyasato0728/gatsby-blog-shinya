@@ -31,34 +31,34 @@ Reactとは、*「JavaScriptを使って、Webでアプリを作ることがで�
 
 ### Reactの特徴
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>JSX</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">JavaScriptの中にHTMLを書く、「JSX」という特殊な文法でコードを書いていきます。</li>
+  <ul>
+    <li>JavaScriptの中にHTMLを書く、「JSX」という特殊な文法でコードを書いていきます。</li>
   </ul>
   <li><em>処理が高速</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">「仮想DOM」という技術を使い、部分的に表示を切り替える事で、高い処理速度を実現しています。</li>
+  <ul>
+    <li>「仮想DOM」という技術を使い、部分的に表示を切り替える事で、高い処理速度を実現しています。</li>
   </ul>
   <li><em>コンポーネントの管理がしやすい</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">複雑な条件も記載でき、かつコンポーネントに条件も記載できるので、複雑な計算式もコンポーネントにまとめて管理ができます。</li>
+  <ul>
+    <li>複雑な条件も記載でき、かつコンポーネントに条件も記載できるので、複雑な計算式もコンポーネントにまとめて管理ができます。</li>
   </ul>
   <li><em>拡張性が高い</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">React様に開発されたプラグインが、npmにたくさんアップロードされています。</li>
+  <ul>
+    <li>React様に開発されたプラグインが、npmにたくさんアップロードされています。</li>
   </ul>
   <li><em>Facebook製</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">Facebook社が開発を行っているので、信頼度が高いフレームワークとなっております。</li>
+  <ul>
+    <li>Facebook社が開発を行っているので、信頼度が高いフレームワークとなっております。</li>
   </ul>
   <li><em>日本語のドキュメントが少ない</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">Facebook公式が開発しているため、日本語のドキュメントは少ないです。</li>
+  <ul>
+    <li>Facebook公式が開発しているため、日本語のドキュメントは少ないです。</li>
   </ul>
   <li><em>学習コストが高い</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">日本語のドキュメントの少なさに加えて、条件式とHTMLを一緒のコンポーネントに書くJSX独特の文法に慣れるのに、多少時間がかかります。</li>
+  <ul>
+    <li>日本語のドキュメントの少なさに加えて、条件式とHTMLを一緒のコンポーネントに書くJSX独特の文法に慣れるのに、多少時間がかかります。</li>
   </ul>
 </ul>
 

@@ -77,11 +77,20 @@ const SearchResult = props => {
         <span className="u-d-flex u-ai-c u-w-100 u-fs-14 u-c-white u-bg-darkgray">
           検索結果<strong>「{result.length}件」</strong>
         </span>
-        <ul className="u-bg-reset u-b-reset u-pa-reset u-list-none">
+        <ul className="u-m-reset u-bg-reset u-b-reset u-pa-reset u-list-none">
           {result.map(e => {
+            const searchResultClickEvent = () => {
+              if (window.ga) {
+                window.ga(`send`, `event`, {
+                  eventCategory: `blog`,
+                  eventAction: `click`,
+                  eventLabel: `blogSearchResultClick-` + e.title,
+                })
+              }
+            }
             return (
               <li className="u-bt-lighter" key={e.title}>
-                <Link className="u-d-flex u-ai-c u-w-100 u-c-darkgray u-fs-13" to={e.path}>
+                <Link className="u-d-flex u-ai-c u-w-100 u-c-darkgray u-fs-13" to={e.path} onClick={searchResultClickEvent}>
                   {e.title}
                 </Link>
               </li>

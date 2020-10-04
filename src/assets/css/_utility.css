@@ -138,6 +138,7 @@
   background-position: center;
   background-size: cover;
 }
+.u-bg-none { background: none !important;}
 
 /* border */
 .u-b-lightest { border: 2px solid $color-lightest !important;}
@@ -163,6 +164,7 @@
 /* list-style-type */
 .u-list-none { list-style-type: none !important;}
 .u-list-alpha { list-style-type: upper-alpha !important;}
+.u-list-disc { list-style-type: disc !important;}
 .u-list-arrow {
   position: relative;
   padding-left: 24px;
@@ -181,6 +183,11 @@
     position: absolute;
     left: 0;
     display: block;
+  }
+}
+.u-list-arrow-none {
+  &:before {
+    content: '' !important;
   }
 }
 

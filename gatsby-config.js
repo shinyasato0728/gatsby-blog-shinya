@@ -77,10 +77,20 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/*.html': [
+            'cache-control: public, max-age=0, must-revalidate'
+          ],
+        },
+      },
+    },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-twitter`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-draft`
