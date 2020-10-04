@@ -313,14 +313,14 @@ Tのマークをクリックします。
 という場合、非常に役に立ちます。  
 YouTubeのサムネ作りをされている方々は、
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>デザイン経験が浅い</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">無料で使えるFigmaならすぐデザインを始められる</li>
+  <ul>
+    <li>無料で使えるFigmaならすぐデザインを始められる</li>
   </ul>
   <li><em>YouTuberという「接点がない」人と仕事をする</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">必然的にリモートワークになる</li>
+  <ul>
+    <li>必然的にリモートワークになる</li>
   </ul>
 </ul>
 

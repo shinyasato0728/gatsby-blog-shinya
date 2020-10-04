@@ -458,26 +458,26 @@ $ php -S localhost:8000
 先ほどMySQLでいたしました、*データベース名・ユーザー名・パスワードを入力します。*  
 それぞれ以下のように入力してください。
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>データベース名</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">postcss_sample_database</li>
+  <ul>
+    <li>postcss_sample_database</li>
   </ul>
   <li><em>ユーザー名</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">postcss_sample_user</li>
+  <ul>
+    <li>postcss_sample_user</li>
   </ul>
   <li><em>パスワード</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">postcss_sample_password</li>
+  <ul>
+    <li>postcss_sample_password</li>
   </ul>
   <li><em>データベースのホスト</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">localhost</li>
+  <ul>
+    <li>localhost</li>
   </ul>
   <li><em>テーブル接頭辞</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">wp_</li>
+  <ul>
+    <li>wp_</li>
   </ul>
 </ul>
 

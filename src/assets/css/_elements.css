@@ -48,9 +48,12 @@ button {
 }
 
 hr { 
-  margin: $space-xxlarge 0; 
+  margin: $space-xxxlarge 0; 
   border: 0;
   border-top: 1px solid $color-darkgray;
+  @media(--smartphone) {
+    margin: $space-xxlarge 0;
+  }
 }
 
 h1 {
@@ -95,26 +98,38 @@ a {
 }
 
 p {
-  margin: $space-xlarge 0;
+  margin: $space-xxlarge 0;
   @media(--smartphone) {
-    margin: $space-medium 0;
+    margin: $space-large 0;
   }
   &:first-of-type { margin-top: unset;}
   &:last-of-type { margin-bottom: unset;}
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul, ol {
+  @mixin ulolStyle;
 }
 
 blockquote {
   font-size: 16px;
   border: 2px solid $color-lightest;
   border-radius: $radius;
-  margin: $space-xlarge 0;
+  margin: $space-xxlarge 0;
   padding: $space-small;
   & p {
     margin: 0 !important;
   }
   @media(--smartphone) {
     font-size: 14px;
-    margin: $space-medium 0;
+    margin: $space-large 0;
     padding: $space-xsmall;
   }
 }

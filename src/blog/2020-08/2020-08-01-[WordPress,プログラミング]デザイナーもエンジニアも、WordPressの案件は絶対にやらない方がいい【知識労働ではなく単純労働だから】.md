@@ -61,14 +61,14 @@ Webアプリについて解説いたしましたので、次は「Webサイト�
 *WordPressが作れるのは、Webアプリではなく「Webサイト」になります。*  
 両者2つは、以下のような致命的な違いがあります。
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>Webサイト</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow"><em>静的なもの（固定的）</em><br />ユーザーの状態によって見た目が変わることはない</li>
+  <ul>
+    <li><em>静的なもの（固定的）</em><br />ユーザーの状態によって見た目が変わることはない</li>
   </ul>
   <li><em>Webアプリ</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow"><em>動的なもの（流動的）</em><br />ユーザーの状態によって、見た目が流動的に変わる</li>
+  <ul>
+    <li><em>動的なもの（流動的）</em><br />ユーザーの状態によって、見た目が流動的に変わる</li>
   </ul>
 </ul>
 

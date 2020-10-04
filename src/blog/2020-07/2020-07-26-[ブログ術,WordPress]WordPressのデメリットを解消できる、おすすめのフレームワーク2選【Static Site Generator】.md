@@ -308,30 +308,30 @@ description: >-
 それぞれ英語から何を表しているか、わかりやすいのではないかと思います。  
 具体的にいうと、
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>path</em></li>
   <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">ページのpath（URL）です</li>
+    <li>ページのpath（URL）です</li>
   </ul>
   <li><em>date</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">ブログを投稿した日時です</li>
+  <ul>
+    <li>ブログを投稿した日時です</li>
   </ul>
   <li><em>thumbnail</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">一覧画面やOGP、ファーストビューの写真です</li>
+  <ul>
+    <li>一覧画面やOGP、ファーストビューの写真です</li>
   </ul>
   <li><em>title</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">ブログのタイトルです</li>
+  <ul>
+    <li>ブログのタイトルです</li>
   </ul>
   <li><em>tags</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">タイトルや記事の一番下に表示される、ブログのタグです</li>
+  <ul>
+    <li>タイトルや記事の一番下に表示される、ブログのタグです</li>
   </ul>
   <li><em>description</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">一覧画面やOGPの、description（説明文）です</li>
+  <ul>
+    <li>一覧画面やOGPの、description（説明文）です</li>
   </ul>
 </ul>
 

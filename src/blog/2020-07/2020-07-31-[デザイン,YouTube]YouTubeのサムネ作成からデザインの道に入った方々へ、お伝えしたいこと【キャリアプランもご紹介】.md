@@ -83,18 +83,18 @@ description: >-
 なぜなら、**「種類」と「判断」が最も目立つ大きさで配置されているから**です。  
 つまりこの場合の画面構成を、文章に起こすと以下のようになります。
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>メインとして言いたいこと</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">副業の「種類」と「始め方」を解説したいので、この2つの文字を大きくしよう</li>
+  <ul>
+    <li>副業の「種類」と「始め方」を解説したいので、この2つの文字を大きくしよう</li>
   </ul>
   <li><em>メインを引き立てる補足情報</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">「ロードマップ」をメインの下に配置し、副業の「種類」と「始め方」のロードマップを解説した動画だと伝える</li>
+  <ul>
+    <li>「ロードマップ」をメインの下に配置し、副業の「種類」と「始め方」のロードマップを解説した動画だと伝える</li>
   </ul>
   <li><em>定量的な根拠</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">「おすすめ7つ」と「第4回」も、定量的な根拠をアピールできるので小さく入れる</li>
+  <ul>
+    <li>「おすすめ7つ」と「第4回」も、定量的な根拠をアピールできるので小さく入れる</li>
   </ul>
 </ul>
 

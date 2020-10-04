@@ -22,14 +22,14 @@ description: >-
 結論をいうと、上記だと僕は考えています。  
 能動的か、受動的かの違いは、まとめますと、
 
-<ul class="u-pa-reset u-pa-24 u-pt-16 u-pb-16 u-list-none">
+<ul class="arrow--ul">
   <li><em>能動的</em></li>
-  <ul class="u-bg-reset u-m-reset u-mb-24 u-pa-reset u-list-none">
-    <li class="u-list-arrow">目的達成のために自分で動いている</li>
+  <ul>
+    <li>目的達成のために自分で動いている</li>
   </ul>
   <li><em>受動的</em></li>
-  <ul class="u-bg-reset u-m-reset u-pa-reset u-list-none">
-    <li class="u-list-arrow">自分で動かず目的達成に必要な情報を待っている</li>
+  <ul>
+    <li>自分で動かず目的達成に必要な情報を待っている</li>
   </ul>
 </ul>
 
