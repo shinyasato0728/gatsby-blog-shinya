@@ -6,11 +6,11 @@
 
 * MacOS version 10.15.3
 
-* Node.js version 12.13.1
+* Node.js version 14.7.0
 
-* Gatsby CLI version: 2.8.29
+* Gatsby CLI version: 2.12.68
 
-* Gatsby version: 2.19.45
+* Gatsby version: 2.19.12
 
 ---
 
