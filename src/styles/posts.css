@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import './_vars.css';
+
 .post__wrapper {
   & h1, & h2, & h3 {
     line-height: normal;
@@ -50,16 +52,10 @@
   }
   & strong {
     font-weight: $fw-bold;
+    background: linear-gradient(transparent 60%,color($color-red a(16%)) 0);
   }
   & a {
       text-decoration: underline;
-  }
-  & p {
-    &:first-of-type { margin-top: $space-large;}
-    &:last-of-type { margin-bottom: $space-large;}
-  }
-  & strong {
-    background: linear-gradient(transparent 60%,color(#ffdfef a(100%)) 0);
   }
   & img {
     border-radius: 20px;
@@ -184,6 +180,7 @@
   }
   & .post__text--pre {
     position: relative;
+    z-index: -2;
     font-size: 16px;
     padding: $space-small;
     margin: $space-xlarge 0;
@@ -191,6 +188,7 @@
     border-radius: $radius;
     &:before, &:after {
       position: absolute;
+      z-index: -1;
       content: '“';
       font-size: 100px;
       font-family: sans-serif;

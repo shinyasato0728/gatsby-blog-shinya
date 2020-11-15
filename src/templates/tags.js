@@ -101,8 +101,9 @@ const Tags = ({ pageContext, data }) => {
           return (
             <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb u-ai-fs" key={slug}>
               <Link to={slug}>
-                <figure className="list__blog--image">
+                <figure className="list__blog--image u-o-hidden u-posi-relative">
                   <img src={thumbnail} alt={title} decoding="async" loading="lazy" />
+                  <small className="u-c-white u-pa-16 u-pt-8 u-pb-8 u-fs-13">{date}</small>
                 </figure>
               </Link>
               <div className="list__blog--contents">
@@ -111,7 +112,7 @@ const Tags = ({ pageContext, data }) => {
                 </h2>
                 <p className="description u-c-darkgray">{description}</p>
                 <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                  <ul className="tags__wrapper u-pa-reset u-bg-reset u-list-none">
+                  <ul className="tags__wrapper u-m-reset u-pa-reset u-bg-reset u-list-none">
                     {tags && tags.length > 0
                         ? tags.map(tag => {
                           return (
@@ -121,7 +122,7 @@ const Tags = ({ pageContext, data }) => {
                         : ""
                     }
                   </ul>
-                  <small className="u-c-lightgray u-fs-13 u-lineh-large">{date}</small>
+                  <Link to={slug} style={{ width: 'auto', textDecoration: 'underline' }} className="u-c-lightgray u-fs-13 u-lineh-large">Read more</Link>
                 </div>
               </div>
             </article>

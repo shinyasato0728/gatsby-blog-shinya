@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import './_vars.css';
+
 .tab__wrapper {
   & .tabs__link--wrapper {
     @media(--smartphone) {

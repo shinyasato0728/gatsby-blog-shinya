@@ -8,7 +8,7 @@ const ListTagsNumber = ({
     allMarkdownRemark: { group },
   },
 }) => (
-  <ul className="tags__wrapper u-pa-reset u-bg-reset u-list-none">
+  <ul className="tags__wrapper u-m-reset u-pa-reset u-bg-reset u-list-none">
     {group.map(tag => (
       <li key={tag.fieldValue}>
         <Link className="tag__link u-d-flex u-ai-c u-fw-b u-bo-radius" activeClassName="link--active" to={`/tags/${kebabCase(tag.fieldValue)}`}>

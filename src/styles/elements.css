@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import './_vars.css';
+
 @reset-global pc;
 
 * { box-sizing: border-box;}
@@ -97,7 +99,7 @@ a {
   }
 }
 
-p {
+p, pre {
   margin: $space-xxlarge 0;
   @media(--smartphone) {
     margin: $space-large 0;
@@ -115,7 +117,22 @@ ol {
 }
 
 ul, ol {
-  @mixin ulolStyle;
+  margin: $space-xxlarge 0;
+  padding: $space-xsmall $space-xsmall $space-xsmall $space-xlarge;
+  border-radius: $radius;
+  background: color($color-blue a(8%));
+  & li {
+    & p {
+      margin: unset !important;
+    }
+  }
+  @media(--smartphone) {
+    margin: $space-large 0;
+    padding: $space-xxsmall $space-xxsmall $space-xxsmall $space-large;
+  }
+}
+
+pre {
 }
 
 blockquote {
@@ -141,6 +158,7 @@ code {
     color: $color-red !important;
     text-shadow: none !important;
     background: $color-lightest !important;
+    word-break: break-all;
   }
   @media(--smartphone) {
     font-size: 14px !important;
@@ -149,4 +167,39 @@ code {
 
 iframe {
   border: none;
+}
+
+table {
+  display: block;
+  margin: $space-xxlarge 0;
+  @media(--smartphone) {
+    margin: $space-large 0;
+  }
+  & thead, & tbody {
+    display: block;
+  }
+  & tr {
+    display: flex;
+    & th, & td {
+      width: 100%;
+      padding: $space-xsmall;
+      margin-top: -1px;
+      margin-left: -1px;
+      border: 1px solid $color-lighter;
+      @media(--smartphone) {
+        padding: $space-xxsmall;
+      }
+      & img, & video {
+        margin: 0 !important;
+        border-radius: $radius !important;
+      }
+    }
+    & th {
+      background: $color-darkgray;
+      color: $color-white;
+      & a {
+        color: $color-white;
+      }
+    }
+  }
 }

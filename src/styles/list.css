@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+@import './_vars.css';
+
+@import './_vars.css';
+
 .list__blog {
   padding: $space-large 0;
   &:first-of-type {
@@ -8,8 +12,14 @@
   & a {
     width: 330px;
     & .list__blog--image {
-      overflow: hidden;
       border-radius: $space-xsmall;
+      & small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: color($color-darker a(80%));
+        border-radius: 0 $space-xxsmall 0 0 / 0 $space-xxsmall 0 0;
+      }
     }
     @media(--breakPC) {
       width: 33%;

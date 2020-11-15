@@ -14,11 +14,16 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
   }, [location.pathname])
 
   const {edges: posts} = data.allMarkdownRemark;
-  const { currentPage, numPages } = pageContext
+
+  const { currentPage, numPages } = pageContext;
+
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
-  const nextPage = (currentPage + 1).toString()
+  const prevPageNum =
+    currentPage - 1 === 1 ? `` : `posts/${(currentPage - 1).toString()}`
+  const nextPageNum = (currentPage + 1).toString()
+  const prevPageLink = isFirst ? null : `/${prevPageNum}`
+  const nextPageLink = isLast ? null : `/posts/${nextPageNum}`
 
   return (
     <div>
@@ -29,8 +34,9 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
         return (
           <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb u-ai-fs" key={post.id}>
             <Link to={frontmatter.path}>
-              <figure className="list__blog--image">
+              <figure className="list__blog--image u-o-hidden u-posi-relative">
                 <img src={frontmatter.thumbnail} alt={frontmatter.title} decoding="async" loading="lazy" />
+                <small className="u-c-white u-pa-16 u-pt-8 u-pb-8 u-fs-13">{frontmatter.date}</small>
               </figure>
             </Link>
             <div className="list__blog--contents">
@@ -39,7 +45,7 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
               </h2>
               <p className="description u-c-darkgray">{frontmatter.description}</p>
               <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                <ul className="tags__wrapper u-pa-reset u-bg-reset u-list-none">
+                <ul className="tags__wrapper u-m-reset u-pa-reset u-bg-reset u-list-none">
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0
                       ? post.frontmatter.tags.map(tag => {
                         return (
@@ -49,7 +55,7 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
                       : ""
                   }
                 </ul>
-                <small className="u-c-lightgray u-fs-13 u-lineh-large">{frontmatter.date}</small>
+                <Link to={frontmatter.path} style={{ width: 'auto', textDecoration: 'underline' }} className="u-c-lightgray u-fs-13 u-lineh-large">Read more</Link>
               </div>
             </div>
           </article>
@@ -57,12 +63,12 @@ const IndexTemplatePage = ({ data, location, pageContext }) => {
       })}
       <div className="u-o-hidden u-mt-40 u-mb-40">
         {!isFirst && (
-          <Link className="u-f-left" to={prevPage} rel="prev">
+          <Link className="u-f-left" to={prevPageLink} rel="prev">
             ← 前のページへ
           </Link>
         )}
         {!isLast && (
-          <Link className="u-f-right" to={nextPage} rel="next">
+          <Link className="u-f-right" to={nextPageLink} rel="next">
             次のページへ →
           </Link>
         )}

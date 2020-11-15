@@ -6,8 +6,6 @@ import Header from '../components/Header';
 
 import _ from "lodash";
 
-import '../assets/css/module/prism.min.css';
-
 const BlogTemplate = (props, location) => {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
@@ -25,7 +23,7 @@ const BlogTemplate = (props, location) => {
       <section className="post__wrapper u-w-small u-m-0a u-lineh-medium">
         <h1 className="title">{post.frontmatter.title}</h1>
         <div className="u-mt-16 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-          <ul className="tags__wrapper u-pa-reset u-bg-reset u-list-none">
+          <ul className="tags__wrapper u-m-reset u-pa-reset u-bg-reset u-list-none">
             {post.frontmatter.tags && post.frontmatter.tags.length > 0
                 ? post.frontmatter.tags.map(tag => {
                   return (

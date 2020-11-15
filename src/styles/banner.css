@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+@import './_vars.css';
+
+.banner__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: $small-width;
+  @media(--smartphone) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 $space-xsmall;
+  }
+}
