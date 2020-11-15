@@ -28,8 +28,9 @@ const AllBlogPage = ({ data, location }) => {
           return (
             <article className="list__blog u-bb-lighter u-d-flex u-d-flex-wp u-jc-sb u-ai-fs" key={post.id}>
               <Link to={frontmatter.path}>
-                <figure className="list__blog--image">
+                <figure className="list__blog--image u-o-hidden u-posi-relative">
                   <img src={frontmatter.thumbnail} alt={frontmatter.title} decoding="async" loading="lazy" />
+                  <small className="u-c-white u-pa-16 u-pt-8 u-pb-8 u-fs-13">{frontmatter.date}</small>
                 </figure>
               </Link>
               <div className="list__blog--contents">
@@ -38,7 +39,7 @@ const AllBlogPage = ({ data, location }) => {
                 </h2>
                 <p className="description u-c-darkgray">{frontmatter.description}</p>
                 <div className="u-mt-8 u-d-flex u-d-flex-wp u-ai-c u-jc-sb">
-                  <ul className="tags__wrapper u-pa-reset u-bg-reset u-list-none">
+                  <ul className="tags__wrapper u-m-reset u-pa-reset u-bg-reset u-list-none">
                     {post.frontmatter.tags && post.frontmatter.tags.length > 0
                         ? post.frontmatter.tags.map(tag => {
                           return (
@@ -48,7 +49,7 @@ const AllBlogPage = ({ data, location }) => {
                         : ""
                     }
                   </ul>
-                  <small className="u-c-lightgray u-fs-13 u-lineh-large">{frontmatter.date}</small>
+                  <Link to={frontmatter.path} style={{ width: 'auto', textDecoration: 'underline' }} className="u-c-lightgray u-fs-13 u-lineh-large">Read more</Link>
                 </div>
               </div>
             </article>

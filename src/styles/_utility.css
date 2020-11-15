@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import './_vars.css';
+
 /* text-align */
 .u-ta-c {
   text-align: center !important;
@@ -42,7 +44,7 @@
   }
 }
 .u-w-banner {
-  width: 300px;
+  max-width: 290px;
 }
 
 /* font-size */
@@ -109,6 +111,7 @@
 .u-pb-64 { padding-bottom: $space-xxxlarge !important; }
 
 /* display */
+.u-d-block { display: block !important;}
 .u-d-flex { display: flex !important;}
 .u-d-flex-wp { flex-wrap: wrap !important;}
 .u-jc-c { justify-content: center !important;}
@@ -132,6 +135,8 @@
 .u-bg-white { background: $color-white !important;}
 .u-bg-darkgray { background: $color-darkgray !important;}
 .u-bg-lightest { background: $color-lightest !important;}
+.u-bg-red { background: color($color-red a(16%)) !important;}
+.u-bg-blue { background: color($color-blue a(12%)) !important;}
 .u-bg-reset { background: none !important;}
 .u-bg-cover {
   background-repeat: no-repeat;

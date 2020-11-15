@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
       <hr />
       <h2>②個人情報の第三者への開示</h2>
       <p className="u-m-reset u-mt-16 u-mb-16">当サイトでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。</p>
-      <ul>
+      <ul className="u-m-reset u-mt-16 u-mb-16">
         <li>本人のご了解がある場合</li>
         <li>法令等への協力のため、開示が必要となる場合</li>
       </ul>

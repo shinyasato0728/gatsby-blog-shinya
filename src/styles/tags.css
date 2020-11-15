@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import './_vars.css';
+
 .tags__wrapper {
   & p {
     color: $color-darkgray;
@@ -55,8 +57,14 @@
         }
       }
     }
-    & .is--bg__blog {
-      background-image: url("/images/list/bg_blog.jpg");
+    & .is--bg__programming {
+      background-image: url("/images/list/bg_programming.jpg");
+    }
+    & .is--bg__design {
+      background-image: url("/images/list/bg_design.jpg");
+    }
+    & .is--bg__marketing {
+      background-image: url("/images/list/bg_marketing.jpg");
     }
     & .is--bg__education {
       background-image: url("/images/list/bg_education.jpg");

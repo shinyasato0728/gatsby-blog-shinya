@@ -6,11 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: `{{{サイトのtitleを入れる}}}`,
-    description: `{{{サイトのdescriptionを入れる}}}`,
-    siteUrl: `{{{サイトの絶対パスを入れる}}}`,
+    title: `{{{サイトの名前を入れる}}}`,
+    description: `{{{サイトの説明を入れる}}}`,
+    siteUrl: `{{{サイトのURLを入れる}}}`,
     ogImage: `{{{サイトのOGPのパスを入れる}}}`,
-    author: `{{{あなたの名前を入れる}}}`,
+    author: `{{{サイト作成者を入れる}}}`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-{{{GAのトラッキングID}}}"
+        trackingId: "UA-162931294-1"
       }
     },
     {
@@ -92,7 +92,7 @@ module.exports = {
     `gatsby-plugin-twitter`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-layout`,
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-draft`
   ]
 }
