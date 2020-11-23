@@ -41,21 +41,21 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # node.jsのインストール可能なバージョンを確認する
 $ nodebrew ls-remote
 
-# node.js v12.13.1のインストール
-$ nodebrew install-binary v12.13.1
+# node.js v14.7.0のインストール
+$ nodebrew install-binary v14.7.0
 
 # 確認する
 $ nodebrew ls
-v12.13.1
+v14.7.0
 
 current: none
 
 # node.jsをセットアップする
-$ nodebrew use v12.13.1
+$ nodebrew use v14.7.0
 
 # 確認する
 $ node -v
-v12.13.1
+v14.7.0
 ```
 
 ### yarnのインストール
